@@ -1,0 +1,112 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--main-darck-color);
+  &__language-switch {
+    padding: 10px calc(50vw - 173px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-blend-mode: overlay;
+    background: rgba(255, 255, 255, 0.2);
+    .button_lang {
+      cursor: pointer;
+      text-align: center;
+      padding: 5px 7px;
+      margin: 0;
+      border-radius: 8px;
+      font: 700 12px/1.25 'Montserrat', sans-serif;
+      letter-spacing: 1px;
+    }
+    .current_lang {
+      background: var(--accent-pink-color);
+    }
+    .contact_phone {
+      font: 700 16px/1.25 'Montserrat', sans-serif;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &__services{
+    padding: 15px calc(50vw - 173px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font: 20px/1.2 'Montserrat', sans-serif;
+      margin: 0 auto 0 20px;
+    }
+    .logo {
+      display: block;
+      max-width: 70px;
+    }
+    &__toggler {
+      width: 18px;
+      height: 14px;
+      display: block;
+      position: relative;
+      z-index: 3;
+      span {
+        width: 100%;
+        height: 2px;
+        background: #ffffff;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-50%);
+        &:nth-child(2) {
+          top: 50%;
+        }
+        &:nth-child(3) {
+          top: 100%;
+        }
+      }
+    }
+    &__nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--main-darck-color);
+      display: none;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      padding: 40px;
+      box-sizing: border-box;
+      &-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        a {
+          color: #ffffff;
+          font-weight: 400;
+          text-decoration: none;
+        }
+      }
+    }
+    #nav-toggler:checked ~ &__nav {
+      display: flex;
+    }
+    #nav-toggler:checked ~ &__toggler {
+      span {
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%) rotate(225deg);
+        &:nth-child(2) {
+          transform: translate(-50%,-50%) rotate(-225deg);
+        }
+      }
+    }
+  }
+}
