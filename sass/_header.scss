@@ -1,12 +1,10 @@
 .header {
-  position: fixed;
-  left: 0;
-  top: 0;
+  position: absolute;
   width: 100%;
   box-sizing: border-box;
-  background: var(--main-darck-color);
+  z-index: 10;
   &__language-switch {
-    padding: 10px calc(50vw - 173px);
+    padding: 10px calc(50vw - 187px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,6 +18,9 @@
       border-radius: 8px;
       font: 700 12px/1.25 'Montserrat', sans-serif;
       letter-spacing: 1px;
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
     }
     .current_lang {
       background: var(--accent-pink-color);
@@ -31,10 +32,9 @@
     }
   }
   &__services{
-    padding: 15px calc(50vw - 173px);
+    padding: 13px calc(50vw - 187px);
     display: flex;
     justify-content: space-between;
-    align-items: center;
     p {
       font: 20px/1.2 'Montserrat', sans-serif;
       margin: 0 auto 0 20px;
@@ -44,26 +44,34 @@
       max-width: 70px;
     }
     &__toggler {
-      width: 18px;
-      height: 14px;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
       display: block;
       position: relative;
       z-index: 3;
       span {
-        width: 100%;
+        width: 18px;
         height: 2px;
         background: #ffffff;
         display: block;
         position: absolute;
-        left: 0;
+        left: 50%;
         top: 0;
-        transform: translateY(-50%);
+        transform: translateX(-50%);
+        &:nth-child(1) {
+          transform: translate(-50%, 10px);
+        }
         &:nth-child(2) {
           top: 50%;
         }
         &:nth-child(3) {
           top: 100%;
+          transform: translate(-50%, -10px);
         }
+      }
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
       }
     }
     &__nav {
@@ -72,7 +80,6 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background: var(--main-darck-color);
       display: none;
       flex-direction: column;
       gap: 30px;
@@ -101,7 +108,7 @@
       span {
         top: 50%;
         left: 50%;
-        width: 100%;
+        width: 18px;
         transform: translate(-50%,-50%) rotate(225deg);
         &:nth-child(2) {
           transform: translate(-50%,-50%) rotate(-225deg);
