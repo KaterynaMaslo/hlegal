@@ -1,0 +1,21 @@
+.team {
+  margin-top: 50px;
+  //border-radius: 12px;
+  &__member-card {
+    background-color: #EDEDF7;
+    &__center {
+      padding: 30px;
+    }
+    img {
+      //border-radius: 0 0 12px 12px ;
+    }
+    &__name {
+      font: 700 16px/1.25 'Montserrat', sans-serif;
+      color: var(--text-grey);
+    }
+    &__desk {
+      font: 400 14px/1.57 'Montserrat', sans-serif;
+      color: var(--text-grey);
+    }
+  }
+}
