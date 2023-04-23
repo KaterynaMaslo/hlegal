@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-darck-color);
+  &__map-link {
+    font: 700 12px/1.25 "Montserrat",sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+  }
+  &__phone-link {
+    color: var(--main-darck-color);
+    font: 700 16px/1.25 "Montserrat",sans-serif;
+  }
+  &__mail-link {
+    font: 700 16px/1.25 "Montserrat",sans-serif;
+
+  }
+}

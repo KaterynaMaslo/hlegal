@@ -13,7 +13,6 @@ html {
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
 }
 a {
   cursor: pointer;
@@ -25,6 +24,7 @@ a {
 }
 main {
   .background {
+    color: #fff;
     display:block;
     position: relative;
     background: var(--background-gradient);
@@ -65,11 +65,6 @@ img {
   svg {
     margin: 0 5px;
   }
-}
-.link-blue-header {
-  font: 700 22px/1.22 'Montserrat', sans-serif;
-  color: var(--link-active-color);
-  margin: 30px 0 15px 0;
 }
 .header-red-gradient {
   margin: 10px 0 30px 0;

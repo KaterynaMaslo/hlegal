@@ -1,13 +1,13 @@
 .team {
-  margin-top: 50px;
-  //border-radius: 12px;
+  margin: 50px 0 60px;
   &__member-card {
     background-color: #EDEDF7;
+    border-radius: 12px;
     &__center {
       padding: 30px;
     }
     img {
-      //border-radius: 0 0 12px 12px ;
+      border-radius:12px 12px 0 0;
     }
     &__name {
       font: 700 16px/1.25 'Montserrat', sans-serif;
@@ -16,6 +16,24 @@
     &__desk {
       font: 400 14px/1.57 'Montserrat', sans-serif;
       color: var(--text-grey);
+    }
+  }
+  &__slider-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    top: 100%;
+    &__dot {
+      display: block;
+      margin: 0 15px;
+      width: 16px;
+      height: 16px;
+      background: rgba(36, 163, 255, .2);
+      border-radius: 100px;
+      &:hover {
+        background: var(--link-active-color);
+      }
     }
   }
 }
