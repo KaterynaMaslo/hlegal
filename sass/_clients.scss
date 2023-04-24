@@ -7,11 +7,15 @@
     text-align: center;
   }
   &__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
     &__item {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 120px;
+      width: 100%;
     }
     & > :nth-child(1){
       background-color: #1C4280;

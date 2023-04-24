@@ -1,6 +1,7 @@
 .publications {
   background-color: var(--background-grey-light);
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   &__card {
     color: #000;
     border-radius: 12px;
@@ -13,7 +14,6 @@
       padding: 30px;
       &__a {
         font: 700 16px/1.25 'Montserrat', sans-serif;
-        color: var(--link-active-color);
         margin: 0;
       }
       &__data {

@@ -17,6 +17,13 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: var(--link-regular-color);
+  &:hover {
+    color: var(--link-hover-color);
+  }
+  &:active {
+    color: var(--link-active-color);
+  }
 }
 .center {
   padding-left: calc(50vw - 157px);
@@ -61,7 +68,6 @@ img {
   font: 700 14px/1.2 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--link-active-color);
   svg {
     margin: 0 5px;
   }
