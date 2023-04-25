@@ -1,6 +1,5 @@
 .offer {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   align-items: center;
   padding-top: 230px;
@@ -14,7 +13,6 @@
   h1 {
     font: 700 38px/1.22 'Montserrat', sans-serif;
     text-align: center;
-    max-width: 350px;
     margin: 0;
   }
   &__button {

@@ -7,7 +7,7 @@
     text-align: center;
   }
   &__block {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     gap: 0;
     &__item {
@@ -16,6 +16,9 @@
       align-items: center;
       height: 120px;
       width: 100%;
+    }
+    & > :nth-child(n+6):nth-last-child(-n+6) {
+      display: none;
     }
     & > :nth-child(1){
       background-color: #1C4280;
@@ -34,6 +37,24 @@
     }
     & > :nth-child(6){
       background-color: #E2E2E4;
+    }
+    & > :nth-child(7){
+      background-color: #C71C36;
+    }
+    & > :nth-child(8){
+      background-color: #DCF3F9;
+    }
+    & > :nth-child(9){
+      background-color: #EAEAEA;
+    }
+    & > :nth-child(10){
+      background-color: #282240;
+    }
+    & > :nth-child(11){
+      background-color: #1D4568;
+    }
+    & > :nth-child(12){
+      background-color: #000;
     }
   }
 }

@@ -1,1 +1,1 @@
-/*# sourceMappingURL=media.css.map */
+@media screen and (min-width: 650px){.center{padding-left:calc(50vw - 325px);padding-right:calc(50vw - 325px)}.offer{padding-top:490px;gap:417px}.experience__scroll{padding-bottom:45px}.experience__info{margin-top:60px}.services__cards{grid-template-columns:1fr 1fr}.clients__block{grid-template-columns:1fr 1fr 1fr}.clients__block>:nth-child(n+6):nth-last-child(-n+6){display:flex}}/*# sourceMappingURL=media.css.map */

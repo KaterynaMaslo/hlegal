@@ -1,0 +1,36 @@
+@media screen and (min-width: 650px){
+  .center {
+    padding-left: calc(50vw - 325px);
+    padding-right: calc(50vw - 325px);
+  }
+  .header{
+
+  }
+  .offer {
+    padding-top: 490px;
+    gap: 417px;
+  }
+  .experience {
+    &__scroll {
+      padding-bottom: 45px;
+    }
+    &__info {
+      margin-top: 60px;
+    }
+  }
+  .services {
+    &__cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .clients {
+    &__block {
+      grid-template-columns: 1fr 1fr 1fr;
+      &__item {
+      }
+      & > :nth-child(n+6):nth-last-child(-n+6) {
+        display: flex;
+      }
+    }
+  }
+}
