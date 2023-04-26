@@ -32,8 +32,8 @@
       text-decoration: none;
     }
   }
-  &__services{
-    padding: 13px calc(50vw - 187px);
+  /*&__services{
+    margin: 13px calc(50vw - 187px);
     display: flex;
     justify-content: space-between;
     p {
@@ -125,6 +125,100 @@
         transform: translate(-50%,-50%) rotate(225deg);
         &:nth-child(2) {
           transform: translate(-50%,-50%) rotate(-225deg);
+        }
+      }
+    }
+  }*/
+  &__services{
+    padding: 13px calc(50vw - 187px);
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &__list {
+        flex-direction: column;
+        position: fixed;
+        margin: 0;
+        background-color: #fff;
+        bottom: 0;
+        width: calc(100% - 8px);
+        transform: translateX(-50%);
+        left: 50%;
+        display: none;
+        padding: 64px 12px 12px;
+        box-sizing: border-box;
+        border-radius: 12px 12px 0 0;
+        list-style: none;
+        gap: 15px;
+        li {
+          width: 100%;
+          background-color: var(--background-grey-light);
+          text-align: center;
+          font-weight: 700;
+          border-radius: 12px;
+          padding: 7px 0;
+          a {
+          }
+          &:hover > a{
+            color: var(--accent-pink-color);
+          }
+          &:active {
+            background-color: #E6E6F0;
+          }
+        }
+      }
+      .p-services {
+        font: 20px/1.2 'Montserrat', sans-serif;
+        margin: 0 auto 0 20px;
+      }
+      .logo {
+        display: block;
+        max-width: 70px;
+      }
+      &__toggler {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        display: block;
+        position: relative;
+        z-index: 3;
+        span {
+          width: 18px;
+          height: 2px;
+          background: #ffffff;
+          display: block;
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translateX(-50%);
+          &:nth-child(1) {
+            transform: translate(-50%, 10px);
+          }
+          &:nth-child(2) {
+            top: 50%;
+          }
+          &:nth-child(3) {
+            top: 100%;
+            transform: translate(-50%, -10px);
+          }
+        }
+        &:hover {
+          background: var(--hover-light-text-color);
+        }
+      }
+      #nav-toggler:checked ~ &__list {
+        display: flex;
+      }
+      #nav-toggler:checked ~ &__toggler {
+        span {
+          top: 50%;
+          left: 50%;
+          width: 18px;
+          background: #EC6F5D;;
+          transform: translate(-50%,-50%) rotate(225deg);
+          &:nth-child(2) {
+            transform: translate(-50%,-50%) rotate(-225deg);
+          }
         }
       }
     }

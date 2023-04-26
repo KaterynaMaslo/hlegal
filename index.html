@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-    <section class="header__language-switch">
+    <!--<section class="header__language-switch">
         <label><span class="button_lang">УК</span><span class="button_lang">PO</span><span class="button_lang current_lang">EN</span></label>
         <a href="tel:0800 211 927" class="contact_phone">0800 211 927</a>
     </section>
@@ -19,13 +19,36 @@
         <a href="#" class="logo">
             <img src="img/logo.svg" alt="logo">
         </a>
-        <p>services</p>
+        <p class="header__services__p">services</p>
         <input type="checkbox" class="visually-hidden" id="nav-toggler">
         <label for="nav-toggler" class="header__services__toggler">
             <span></span><span></span><span></span>
         </label>
         <nav class="header__services__nav">
             <ul class="header__services__nav-list">
+                <li><a href="#">about us</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">team</a></li>
+                <li><a href="#">publications</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </section>-->
+    <section class="header__language-switch">
+        <label><span class="button_lang">УК</span><span class="button_lang">PO</span><span class="button_lang current_lang">EN</span></label>
+        <a href="tel:0800 211 927" class="contact_phone">0800 211 927</a>
+    </section>
+    <section class="header__services">
+        <nav class="header__services__nav">
+            <a href="#" class="logo">
+                <img src="img/logo_light.svg" alt="logo">
+            </a>
+            <p class="p-services">services</p>
+            <input type="checkbox" class="visually-hidden" id="nav-toggler">
+            <label for="nav-toggler" class="header__services__nav__toggler">
+                <span></span><span></span><span></span>
+            </label>
+            <ul class="header__services__nav__list">
                 <li><a href="#">about us</a></li>
                 <li><a href="#">services</a></li>
                 <li><a href="#">team</a></li>
@@ -165,30 +188,32 @@
             <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
         </svg></a>
         <h2 class="header-red-gradient">We have something to tell</h2>
-        <article class="publications__card">
-            <img src="../img/equity_associate.jpg" alt="Equity associate">
-            <div class="publications__card__info">
-                <a href="#" class="publications__card__info__a">Equity associate</a>
-                <p class="publications__card__info__data">April 22</p>
-                <p class="publications__card__info__desc">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
-            </div>
-        </article>
-        <article class="publications__card">
-            <img src="../img/gdpr.jpg" alt="gdpr">
-            <div class="publications__card__info">
-                <a href="#" class="publications__card__info__a">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
-                <p class="publications__card__info__data">September 29</p>
-                <p class="publications__card__info__desc">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
-            </div>
-        </article>
-        <article class="publications__card">
-            <img src="../img/millennial_testament.jpg" alt="millennial testament">
-            <div class="publications__card__info">
-                <a href="#" class="publications__card__info__a">Millennial Testament</a>
-                <p class="publications__card__info__data">August 19</p>
-                <p class="publications__card__info__desc">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-            </div>
-        </article>
+        <div class="publications-grid">
+            <article class="publications__card">
+                <img src="../img/equity_associate.jpg" alt="Equity associate">
+                <div class="publications__card__info">
+                    <a href="#" class="publications__card__info__a">Equity associate</a>
+                    <p class="publications__card__info__data">April 22</p>
+                    <p class="publications__card__info__desc">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                </div>
+            </article>
+            <article class="publications__card">
+                <img src="../img/gdpr.jpg" alt="gdpr">
+                <div class="publications__card__info">
+                    <a href="#" class="publications__card__info__a">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
+                    <p class="publications__card__info__data">September 29</p>
+                    <p class="publications__card__info__desc">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                </div>
+            </article>
+            <article class="publications__card">
+                <img src="../img/millennial_testament.jpg" alt="millennial testament">
+                <div class="publications__card__info">
+                    <a href="#" class="publications__card__info__a">Millennial Testament</a>
+                    <p class="publications__card__info__data">August 19</p>
+                    <p class="publications__card__info__desc">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                </div>
+            </article>
+        </div>
     </section>
 </main>
 <footer class="center footer">

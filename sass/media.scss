@@ -1,10 +1,96 @@
 @media screen and (min-width: 650px){
-  .center {
+  .center, .header{
     padding-left: calc(50vw - 325px);
     padding-right: calc(50vw - 325px);
   }
   .header{
-
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__language-switch {
+      justify-content: normal;
+      background-color: transparent;
+      padding: 50px 0 0;
+    }
+    /*&__services {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      &__p {
+        display: none;
+      }
+      &__toggler {
+        display: none;
+      }
+      &__nav {
+        background-color: transparent;
+        width: 100%;
+        bottom: auto;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        transform: none;
+        padding: 0;
+        gap: 0;
+        .logo {
+          display: block;
+          img {
+            width: 157px;
+            height: 25px;
+          }
+        }
+        &-list {
+          margin: 0 30px 0 auto;
+          gap: 15px;
+          flex-direction: row;
+          li {
+            width: auto;
+            background-color: transparent;
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }*/
+    &__services {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      &__nav {
+        flex-direction: column;
+        gap: 30px;
+        .p-services {
+          display: none;
+        }
+        &__toggler {
+          display: none;
+        }
+        .logo {
+          display: block;
+          max-width: 100%;
+        }
+        &__list {
+          position: relative;
+          background-color: transparent;
+          flex-direction: row;
+          width: 100%;
+          bottom: auto;
+          height: fit-content;
+          display: flex;
+          padding: 0;
+          gap: 15px;
+          li {
+            width: auto;
+            background-color: transparent;
+            padding: 0;
+            a {
+              font: 700 16px/1.25 'Montserrat', sans-serif;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
   .offer {
     padding-top: 490px;
@@ -30,6 +116,16 @@
       }
       & > :nth-child(n+6):nth-last-child(-n+6) {
         display: flex;
+      }
+    }
+  }
+  .publications {
+    .publications-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      :nth-child(3) {
+        grid-column: 1/-1;
       }
     }
   }
