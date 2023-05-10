@@ -79,6 +79,12 @@ img {
   svg {
     margin: 0 5px;
   }
+  &:hover {
+    color: var(--accent-pink-color);
+    svg > path {
+      stroke: var(--accent-pink-color);
+    }
+  }
 }
 .header-red-gradient {
   margin: 10px 0 30px 0;

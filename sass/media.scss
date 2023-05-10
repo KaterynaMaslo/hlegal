@@ -85,6 +85,9 @@
   .experience {
     &__scroll {
       padding-bottom: 45px;
+      a {
+        font: 700 38px/1.21 'Montserrat', sans-serif;
+      }
     }
     &__info {
       margin-top: 60px;
@@ -96,6 +99,7 @@
   .services {
     &__cards {
       grid-template-columns: 1fr 1fr;
+      gap: 60px;
     }
   }
   .clients {
@@ -187,7 +191,7 @@
   }
   .experience {
     display: grid;
-    grid-template-columns: 375px 1fr;
+    grid-template-columns: 440px 1fr;
     &__scroll {
       border-right: 4px solid rgba(255, 255, 255, 0.3);
       border-bottom: none;
@@ -229,6 +233,29 @@
       grid-template-columns: 1fr 1fr 1fr;
       :nth-child(3) {
         grid-column: unset;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1320px){
+  .center, .header{
+    padding-left: calc(50vw - 660px);
+    padding-right: calc(50vw - 660px);
+  }
+  .offer {
+    background-size: contain;
+    padding-top: 375px;
+    gap: 305px;
+  }
+  .experience {
+    max-width: 1080px;
+    align-items: center;
+    margin: 30px auto;
+  }
+  .team {
+    &__member-card {
+      img {
+        max-height: 344px;
       }
     }
   }
