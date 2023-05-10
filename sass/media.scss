@@ -7,51 +7,27 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    &__language-switch {
-      justify-content: normal;
+    &__top-section {
+      justify-content: left;
+      align-items: center;
       background-color: transparent;
       padding: 50px 0 0;
     }
-    /*&__services {
-      flex-direction: column;
-      margin: 0;
-      padding: 0;
-      &__p {
-        display: none;
-      }
-      &__toggler {
-        display: none;
-      }
-      &__nav {
-        background-color: transparent;
-        width: 100%;
-        bottom: auto;
-        height: fit-content;
-        display: flex;
-        flex-direction: row;
-        transform: none;
-        padding: 0;
-        gap: 0;
-        .logo {
-          display: block;
-          img {
-            width: 157px;
-            height: 25px;
-          }
-        }
-        &-list {
-          margin: 0 30px 0 auto;
-          gap: 15px;
-          flex-direction: row;
-          li {
-            width: auto;
-            background-color: transparent;
-            a {
-              color: #fff;
-            }
-          }
-        }
-      }*/
+    .language-switch::after, .contact_phone::before, .contact_phone::after{
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: white;
+      margin: auto 6px;
+      border-radius: 100px;
+    }
+    .map-link {
+      display: block;
+    }
+    .logo {
+      display: block;
+    }
     &__services {
       flex-direction: column;
       margin: 0;
@@ -86,6 +62,9 @@
             a {
               font: 700 16px/1.25 'Montserrat', sans-serif;
               color: #fff;
+            }
+            &:active {
+              background-color: transparent;
             }
           }
         }
@@ -127,6 +106,44 @@
       :nth-child(3) {
         grid-column: 1/-1;
       }
+    }
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section {
+      flex-direction: row;
+      justify-content: left;
+    }
+    .map {
+      order: -1;
+      gap: 0;
+      .map-desc {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .contacts {
+      grid-column: 1/-1;
+      gap: 0;
+      .phone-link {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .llc {
+      order: -1;
+      text-align: end;
+      p {margin: 0}
+    }
+    .map-desc::after, .phone-link::before, .phone-link::after {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #B3B3BA;
+      margin: auto 10px;
+      border-radius: 100px;
     }
   }
 }

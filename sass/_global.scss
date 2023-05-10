@@ -63,6 +63,14 @@ img {
   display: block;
   max-width: 100%;
 }
+.logo  {
+  box-sizing: border-box;
+  &:hover {
+    svg > path {
+      fill: var(--accent-pink-color);
+    }
+  }
+}
 
 .link-with-arrow {
   font: 700 14px/1.2 'Montserrat', sans-serif;
