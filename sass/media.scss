@@ -260,3 +260,27 @@
     }
   }
 }
+@media screen and (min-width: 1600px) {
+  .center, .header{
+    padding-left: calc(50vw - 800px);
+    padding-right: calc(50vw - 800px);
+  }
+  .offer {
+    padding-top: 477px;
+    gap: 405px;
+  }
+  .experience {
+    max-width: 1360px;
+    align-items: center;
+    margin: 30px auto;
+  }
+  .clients {
+    max-width: 1720px;
+    align-items: center;
+    margin: auto;
+    &__block {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+  }
+}
