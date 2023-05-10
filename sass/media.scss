@@ -4,8 +4,9 @@
     padding-right: calc(50vw - 325px);
   }
   .header{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 30px;
     &__top-section {
       justify-content: left;
@@ -25,8 +26,18 @@
     .map-link {
       display: block;
     }
-    .logo {
+    .facebook-logo {
       display: block;
+    }
+    &__logo {
+      padding: 0;
+      .logo {
+        display: block;
+        max-width: 100%;
+        &::after {
+          content: none;
+        }
+      }
     }
     &__services {
       flex-direction: column;
@@ -40,10 +51,6 @@
         }
         &__toggler {
           display: none;
-        }
-        .logo {
-          display: block;
-          max-width: 100%;
         }
         &__list {
           position: relative;
@@ -81,6 +88,9 @@
     }
     &__info {
       margin-top: 60px;
+      &__h {
+        font-size: 30px;
+      }
     }
   }
   .services {
@@ -91,8 +101,6 @@
   .clients {
     &__block {
       grid-template-columns: 1fr 1fr 1fr;
-      &__item {
-      }
       & > :nth-child(n+6):nth-last-child(-n+6) {
         display: flex;
       }
@@ -111,6 +119,7 @@
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
     section {
       flex-direction: row;
       justify-content: left;
@@ -144,6 +153,83 @@
       background: #B3B3BA;
       margin: auto 10px;
       border-radius: 100px;
+    }
+  }
+}
+@media screen and (min-width: 904px){
+  .center, .header{
+    padding-left: calc(50vw - 452px);
+    padding-right: calc(50vw - 452px);
+  }
+  .header {
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding-top: 50px;
+    &__top-section {
+      padding: 0;
+      margin: 0 0 0 auto;
+      grid-column: unset;
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    &__logo {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+    &__services {
+      margin: 0 0 0 auto;
+      grid-area: 2 / 2 / 3 / 3;
+    }
+  }
+  .offer {
+    background-size: contain;
+    padding-top: 360px;
+    gap: 290px;
+  }
+  .experience {
+    display: grid;
+    grid-template-columns: 375px 1fr;
+    &__scroll {
+      border-right: 4px solid rgba(255, 255, 255, 0.3);
+      border-bottom: none;
+      padding: 0;
+      &__scroll-menu {
+        padding: 15px 60px 15px 0;
+        white-space: unset;
+        text-align: end;
+        a {
+          margin: 0 0 30px auto;
+        }
+      }
+    }
+    &__info {
+      margin: 10px 0 10px 60px;
+      &__desc {
+        margin: 0;
+      }
+    }
+  }
+  .services {
+    &__cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .team {
+    &__member-card {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+    }
+  }
+  .clients {
+    &__block {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  .publications {
+    .publications-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      :nth-child(3) {
+        grid-column: unset;
+      }
     }
   }
 }

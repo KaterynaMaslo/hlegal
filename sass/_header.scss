@@ -4,8 +4,11 @@
   width: 100%;
   box-sizing: border-box;
   z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   &__top-section {
     padding: 10px calc(50vw - 187px);
+    grid-column: 1/-1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,17 +46,32 @@
       color: #B3B3BA;
       font: 16px/1.25 "Montserrat",sans-serif;
     }
-    .logo {
+    .facebook-logo {
       display: none;
       height: 24px;
+    }
+  }
+  &__logo {
+    padding: 13px calc(50vw - 187px);
+    .logo {
+      display: block;
+      max-width: 70px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &::after {
+        content: "services";
+        font: 20px/1.2 'Montserrat', sans-serif;
+        color: white;
+        padding: 0 20px;
+      }
     }
   }
   &__services{
     padding: 13px calc(50vw - 187px);
     &__nav {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      justify-content: end;
       &__list {
         flex-direction: column;
         position: fixed;
@@ -85,14 +103,6 @@
             background-color: #E6E6F0;
           }
         }
-      }
-      .p-services {
-        font: 20px/1.2 'Montserrat', sans-serif;
-        margin: 0 auto 0 20px;
-      }
-      .logo {
-        display: block;
-        max-width: 70px;
       }
       &__toggler {
         width: 32px;
