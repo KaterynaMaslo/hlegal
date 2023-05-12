@@ -30,7 +30,7 @@ a {
   padding-right: calc(50vw - 157px);
 }
 main {
-  .background {
+  .background-with-offer {
     color: #fff;
     display:block;
     position: relative;
@@ -58,6 +58,9 @@ main {
       width: calc(100% - 40px);
     }
   }
+  .background-usual {
+    padding-top: 132px;
+  }
 }
 img {
   display: block;
@@ -76,6 +79,7 @@ img {
   font: 700 14px/1.2 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-bottom: 10px;
   svg {
     margin: 0 5px;
   }
@@ -87,7 +91,7 @@ img {
   }
 }
 .header-red-gradient {
-  margin: 10px 0 30px 0;
+  margin: 0 0 30px 0;
   font: 700 30px/1.23 'Montserrat', sans-serif;
   background: var(--text-red-gradient);
   -webkit-background-clip: text;

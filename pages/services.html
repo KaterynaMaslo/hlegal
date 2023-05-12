@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hlegal | Homepage</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Hlegal | Services</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <header class="header">
@@ -23,8 +23,8 @@
         </a>
     </section>
     <section class="header__logo">
-        <a href="index.html" class="logo">
-            <img src="img/logo_light.svg" alt="logo">
+        <a href="../index.html" class="logo">
+            <img src="../img/logo_light.svg" alt="logo">
         </a>
     </section>
     <section class="header__services">
@@ -35,7 +35,7 @@
             </label>
             <ul class="header__services__nav__list">
                 <li><a href="#">about us</a></li>
-                <li><a href="pages/services.html">services</a></li>
+                <li><a class="current-page-link" href="#">services</a></li>
                 <li><a href="#">team</a></li>
                 <li><a href="#">publications</a></li>
                 <li><a href="#">contact</a></li>
@@ -44,35 +44,8 @@
     </section>
 </header>
 <main>
-    <div class="background-with-offer">
-        <section class="center offer">
-            <h1>you legal solutions provider</h1>
-            <button class="offer__button">
-                <a href="#nextSection" target="_offer">
-                    <svg width="20" height="14" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L10 10L19 1" stroke="white" stroke-width="2"/>
-                    </svg>
-                </a>
-            </button>
-        </section>
-        <section class="center experience" id="nextSection">
-            <article class="experience__scroll">
-                <div class="experience__scroll__scroll-menu">
-                    <a href="#consistent" class="experience__scroll__scroll-menu__current-item">Consistent</a>
-                    <a href="#customer_oriented">Customer oriented</a>
-                    <a href="#innovative">Innovative</a>
-                    <a href="#business_oriented">Business oriented</a>
-                </div>
-            </article>
-            <article class="experience__info">
-                <h3 class="experience__info__h">We turn the idea of legal services</h3>
-                <p class="experience__info__desc">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
-            </article>
-        </section>
+    <div class="background-with-offer background-usual">
         <section class="center services">
-            <div class="link-with-arrow"><a href="#">Services<svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
-            </svg></a></div>
             <h2 class="header-red-gradient">What can we do better than others?</h2>
             <article class="services__cards">
                 <div class="services__cards__card">
@@ -108,25 +81,6 @@
             </article>
         </section>
     </div>
-    <section class="center team">
-        <article class="team__member-card">
-            <img src="../img/team_member.jpg" alt="team member">
-            <div class="team__member-card__center">
-                <div class="link-with-arrow"><a href="#" class="link-with-arrow">команда<svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
-                </svg></a></div>
-                <h2 class="header-red-gradient">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
-                <h4 class="team__member-card__name">Олександр Олександровський</h4>
-                <p class="team__member-card__desk">Керуючий партнер</p>
-            </div>
-        </article>
-        <div class="team__slider-dots">
-            <a href="#" class="team__slider-dots__indicator"></a>
-            <a href="#" class="team__slider-dots__dot" data-pos="0"></a>
-            <a href="#" class="team__slider-dots__dot" data-pos="1"></a>
-            <a href="#" class="team__slider-dots__dot" data-pos="2"></a>
-        </div>
-    </section>
     <section class="clients">
         <h3 class="clients__h">They already trust us</h3>
         <article class="clients__block">
@@ -167,38 +121,6 @@
                 <img src="../img/ultimatecard_logo.png" alt="ultimatecard logo" >
             </a>
         </article>
-    </section>
-    <section class="center publications">
-        <div class="link-with-arrow"><a href="#" class="link-with-arrow">publications<svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
-        </svg></a></div>
-        <h2 class="header-red-gradient">We have something to tell</h2>
-        <div class="publications-grid">
-            <article class="publications__card">
-                <img src="../img/equity_associate.jpg" alt="Equity associate">
-                <div class="publications__card__info">
-                    <a href="#" class="publications__card__info__a">Equity associate</a>
-                    <p class="publications__card__info__data">April 22</p>
-                    <p class="publications__card__info__desc">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
-                </div>
-            </article>
-            <article class="publications__card">
-                <img src="../img/gdpr.jpg" alt="gdpr">
-                <div class="publications__card__info">
-                    <a href="#" class="publications__card__info__a">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
-                    <p class="publications__card__info__data">September 29</p>
-                    <p class="publications__card__info__desc">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
-                </div>
-            </article>
-            <article class="publications__card">
-                <img src="../img/millennial_testament.jpg" alt="millennial testament">
-                <div class="publications__card__info">
-                    <a href="#" class="publications__card__info__a">Millennial Testament</a>
-                    <p class="publications__card__info__data">August 19</p>
-                    <p class="publications__card__info__desc">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-                </div>
-            </article>
-        </div>
     </section>
 </main>
 <footer class="center footer">

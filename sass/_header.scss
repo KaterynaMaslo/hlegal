@@ -25,7 +25,7 @@
         border-radius: 8px;
         font: 700 12px/1.25 'Montserrat', sans-serif;
         letter-spacing: 1px;
-        &:hover {
+        &:active {
           background: rgba(255, 255, 255, 0.2);
         }
       }
@@ -54,7 +54,6 @@
   &__logo {
     padding: 13px calc(50vw - 187px);
     .logo {
-      display: block;
       max-width: 70px;
       display: flex;
       flex-direction: row;
@@ -94,13 +93,12 @@
           font-weight: 700;
           border-radius: 12px;
           padding: 7px 0;
-          a {
-          }
-          &:hover > a{
-            color: var(--accent-pink-color);
-          }
+
           &:active {
             background-color: #E6E6F0;
+          }
+          .current-page-link {
+            color: var(--accent-pink-color);
           }
         }
       }

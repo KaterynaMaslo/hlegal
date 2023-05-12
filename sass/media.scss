@@ -3,6 +3,11 @@
     padding-left: calc(50vw - 325px);
     padding-right: calc(50vw - 325px);
   }
+  main {
+    .background-usual {
+      padding-top: 280px;
+    }
+  }
   .header{
     display: grid;
     grid-template-columns: 1fr;
@@ -69,9 +74,21 @@
             a {
               font: 700 16px/1.25 'Montserrat', sans-serif;
               color: #fff;
+              padding-bottom: 3px;
+              &:hover {
+                color: #fff;
+                border-bottom: 2px solid #fff;
+              }
+              &:active {
+                color: var(--accent-pink-color);
+                border-bottom: 2px solid var(--accent-pink-color);
+              }
             }
             &:active {
               background-color: transparent;
+            }
+            .current-page-link {
+              border-bottom: 2px solid var(--accent-pink-color);
             }
           }
         }
@@ -122,14 +139,11 @@
   }
   .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 30px;
     section {
       flex-direction: row;
-      justify-content: left;
+      justify-content: center;
     }
     .map {
-      order: -1;
       gap: 0;
       .map-desc {
         display: flex;
@@ -137,17 +151,11 @@
       }
     }
     .contacts {
-      grid-column: 1/-1;
       gap: 0;
       .phone-link {
         display: flex;
         align-items: center;
       }
-    }
-    .llc {
-      order: -1;
-      text-align: end;
-      p {margin: 0}
     }
     .map-desc::after, .phone-link::before, .phone-link::after {
       content: "";
@@ -164,6 +172,11 @@
   .center, .header{
     padding-left: calc(50vw - 452px);
     padding-right: calc(50vw - 452px);
+  }
+  main {
+    .background-usual {
+      padding-top: 176px;
+    }
   }
   .header {
     grid-template-columns: 140px 1fr;
@@ -236,6 +249,23 @@
       }
     }
   }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    section {
+      justify-content: left;
+    }
+    .map {
+      order: -1;
+    }
+    .contacts {
+      grid-column: 1/-1;
+    }
+    .llc {
+      order: -1;
+      text-align: end;
+    }
+  }
 }
 @media screen and (min-width: 1320px){
   .center, .header{
@@ -277,7 +307,7 @@
   .clients {
     max-width: 1720px;
     align-items: center;
-    margin: auto;
+    margin: 60px auto 0;
     &__block {
       border-radius: 12px;
       overflow: hidden;
