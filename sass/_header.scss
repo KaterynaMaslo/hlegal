@@ -30,6 +30,7 @@
         }
       }
       .current_lang {
+        color: #fff;
         background: var(--accent-pink-color);
       }
     }
@@ -141,12 +142,47 @@
           top: 50%;
           left: 50%;
           width: 18px;
-          background: #EC6F5D;;
+          background: #EC6F5D;
           transform: translate(-50%,-50%) rotate(225deg);
           &:nth-child(2) {
             transform: translate(-50%,-50%) rotate(-225deg);
           }
         }
+      }
+    }
+  }
+}
+.header-light {
+  color: var(--text-grey);
+  .contact_phone {
+    color: var(--text-grey);
+  }
+  .header__logo{
+    display: flex;
+    align-items: self-start;
+    flex-direction: row;
+    .logo {
+    }
+    p {
+      margin: 0;
+      color: var(--main-darck-color);
+      display: flex;
+      align-items: center;
+      &:before {
+        content: url("../img/slash.svg");
+        display: block;
+        height: 26px;
+        padding: 0 4px 0;
+      }
+    }
+  }
+  .header__services__nav {
+    a {
+      color: var(--link-regular-color);
+    }
+    .header__services__nav__toggler {
+      span {
+        background: var(--main-darck-color);
       }
     }
   }

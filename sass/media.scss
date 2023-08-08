@@ -95,6 +95,16 @@
       }
     }
   }
+  .header-light {
+    .language-switch::after, .contact_phone::before, .contact_phone::after{
+      background: var(--separator-grey);
+    }
+    .header__services__nav {
+      a {
+        color: var(--link-regular-color);
+      }
+    }
+  }
   .offer {
     padding-top: 490px;
     gap: 417px;

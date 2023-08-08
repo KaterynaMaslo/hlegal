@@ -2,6 +2,8 @@
   padding-bottom: 60px;
   &__cards {
     display: grid;
+    //grid-template-columns: repeat(auto-fit, minmax(261px, 493px));
+    //without further changing the number of columns
     gap: 30px;
     &__card {
       display: flex;
